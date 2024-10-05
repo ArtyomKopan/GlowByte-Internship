@@ -1,0 +1,95 @@
+digraph {
+	address; is_holiday; day_type; season; comp_activity; M_promo_exp; M_promo_internet; M_promo_banners; S_price; M_price; menu_type; average_purchase_items; average_paycheck; repeated_customers_number; customers_number; M_sales; S_sales; 
+	
+	is_holiday -> day_type
+is_holiday -> comp_activity
+is_holiday -> M_promo_banners
+is_holiday -> average_paycheck
+is_holiday -> customers_number
+day_type -> is_holiday
+day_type -> comp_activity
+day_type -> M_promo_exp
+day_type -> M_promo_internet
+day_type -> menu_type
+day_type -> average_purchase_items
+day_type -> average_paycheck
+day_type -> repeated_customers_number
+day_type -> customers_number
+season -> comp_activity
+season -> M_promo_exp
+season -> M_promo_banners
+season -> average_purchase_items
+season -> average_paycheck
+season -> S_price
+season -> M_price
+comp_activity -> is_holiday
+comp_activity -> day_type
+comp_activity -> season
+comp_activity -> M_promo_exp
+comp_activity -> S_price
+M_promo_exp -> is_holiday
+M_promo_exp -> comp_activity
+M_promo_exp -> M_promo_internet
+M_promo_exp -> M_promo_banners
+M_promo_exp -> menu_type
+M_promo_exp -> average_paycheck
+M_promo_exp -> M_sales
+M_promo_exp -> S_sales
+M_promo_internet -> is_holiday
+M_promo_internet -> comp_activity
+M_promo_internet -> M_promo_banners
+M_promo_internet -> menu_type
+M_promo_internet -> average_paycheck
+M_promo_internet -> S_sales
+S_price -> comp_activity
+S_price -> M_promo_exp
+S_price -> M_promo_internet
+S_price -> M_promo_banners
+S_price -> menu_type
+S_price -> repeated_customers_number
+S_price -> season
+M_price -> is_holiday
+M_price -> M_promo_exp
+M_price -> M_promo_internet
+M_price -> M_promo_banners
+M_price -> menu_type
+M_price -> average_purchase_items
+M_price -> average_paycheck
+M_price -> repeated_customers_number
+M_price -> customers_number
+ menu_type -> is_holiday
+ menu_type -> comp_activity
+ menu_type -> M_promo_banners
+ menu_type -> S_sales
+ average_purchase_items -> is_holiday
+ average_purchase_items -> comp_activity
+ average_purchase_items -> M_promo_exp
+ average_purchase_items -> M_promo_internet
+ average_purchase_items -> M_promo_banners
+ average_purchase_items -> average_paycheck
+ average_purchase_items -> M_sales
+average_paycheck -> comp_activity
+ repeated_customers_number -> is_holiday
+ repeated_customers_number -> comp_activity
+ repeated_customers_number -> menu_type
+ repeated_customers_number -> average_purchase_items
+ repeated_customers_number -> customers_number
+ repeated_customers_number -> M_sales
+ repeated_customers_number -> S_sales
+customers_number -> comp_activity
+ M_sales -> is_holiday
+ M_sales -> comp_activity
+ M_sales -> M_promo_internet
+ M_sales -> M_promo_banners
+ M_sales -> menu_type
+ M_sales -> average_paycheck
+ M_sales -> customers_number
+ M_sales -> M_price
+ S_sales -> is_holiday
+ S_sales -> comp_activity
+ S_sales -> M_promo_banners
+ S_sales -> S_price
+ S_sales -> customers_number
+ S_sales -> M_sales
+ S_sales -> S_price
+}
