@@ -1,0 +1,8 @@
+CBC 2.10.3 (Windows AMD64), driver(20130502), ASL(20161228)
+Ipopt 3.12.13 (Windows AMD64), ASL(20161228)
+Bonmin 1.8.7 using Cbc 2.10.3 and Ipopt 3.12.13
+bonmin (Windows AMD64), ASL(20161228)
+Couenne 0.5.7 -- an Open-Source solver for Mixed Integer Nonlinear Optimization
+Mailing list: couenne@list.coin-or.org
+Instructions: http://www.coin-or.org/Couenne
+couenne (Windows AMD64), ASL(20161228)
